@@ -2,7 +2,7 @@ name: CI
 on: [push, workflow_dispatch]
 jobs:
   build:
-    runs-on: windows-2022
+    runs-on: self-hosted
     steps:
     - name: Download
       run: Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
