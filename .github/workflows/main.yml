@@ -41,7 +41,7 @@ jobs:
         $ngrokUrl = ($ngrokApi | ConvertFrom-Json).tunnels[0].public_url
         Write-Host "Ngrok URL: $ngrokUrl"
     - name: Wait before cleanup
-      run: Start-Sleep -Seconds 46800
+      run: Start-Sleep -Seconds 21600
     - name: Cleanup
       if: always()
       run: |
